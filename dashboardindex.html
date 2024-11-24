@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Task</title>
+    <link rel="stylesheet" href="./dashboardstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <section class="dashboard">
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="organix-logo">
+                <img src="./IMAGES/Organix/Organix logo.svg">
+            </div>
+
+            <div class="search-container">
+                <span class="icon"><i class="fa fa-search"></i></span>
+                <input type="text" placeholder="Search">
+            </div>
+
+            <div class="main-menu">
+                <div class="dashboard-heading-container">
+                    <p>MAIN MENU</p>
+                </div>
+                <div class="options-container">
+                    <div class="icon-and-text-container menu-1">
+                        <div class="sidebar-icon">
+                            <i class="fa-solid fa-house"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Home</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-2">
+                        <div class="sidebar-icon">
+                            <i class="fa-regular fa-folder"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Projects</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-3">
+                        <div class="sidebar-icon">
+                            <i class="fa-regular fa-calendar"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Calendar</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-4">
+                        <div class="sidebar-icon">
+                            <i class="fa-regular fa-user"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Team Member</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-5">
+                        <div class="sidebar-icon">
+                            <i class="fa-solid fa-chart-pie"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Analytics</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-6">
+                        <div class="sidebar-icon">
+                            <i class="fa-solid fa-wallet"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Wallet</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-7">
+                        <div class="sidebar-icon">
+                            <i class="fa-solid fa-rectangle-list"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Tasks</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-8">
+                        <div class="sidebar-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Mail</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="label-menu">
+                <div class="dashboard-heading-container">
+                    <p>LABEL</p>
+                </div>
+                <div class="options-container">
+                    <div class="icon-and-text-container menu-9">
+                        <div class="sidebar-icon green-circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Marketing</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-10">
+                        <div class="sidebar-icon purple-circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Development</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-11">
+                        <div class="sidebar-icon orange-circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>Design</p>
+                        </div>
+                    </div>
+    
+                    <div class="icon-and-text-container menu-12">
+                        <div class="sidebar-icon pink-circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="sidebar-text">
+                            <p>3D Modeling</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>    
+        </div>
+        </div>
+        
+        <!-- MAIN SECTION -->
+        <div class="main-section">
+            <div class="header">
+                <div class="tasks-text">
+                    <h1>Tasks</h1>
+                </div>
+                <div class="right-header">
+                    <div class="add-task-container">
+                        <div class="add-task-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+
+                        <div class="add-task-text">
+                            <p>Add Task</p>
+                        </div>
+                    </div>
+                    <div class="notifications-container">
+                        <div class="sidebar-icon notifications-circle">
+                            <i class="fa-solid fa-circle"></i>
+                        </div>
+                        <div class="bell-icon">
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                    </div>
+                    <div class="profile-image-container"></div>
+                </div>
+            </div>
+            
+            <div class="navigation-bar">
+               <div class="left-navigation-bar">
+                <div class="icon-and-text-container board-container">
+                    <div class="sidebar-icon">
+                        <i class="fa-solid fa-table-columns"></i>
+                    </div>
+                    <div class="sidebar-text">
+                        <p>Board</p>
+                    </div>
+                </div>
+
+                <div class="icon-and-text-container">
+                    <div class="sidebar-icon">
+                        <i class="fa-solid fa-table"></i>
+                    </div>
+                    <div class="sidebar-text">
+                        <p>Table</p>
+                    </div>
+                </div>
+
+                <div class="icon-and-text-container">
+                    <div class="sidebar-icon">
+                        <i class="fa-regular fa-calendar"></i>
+                    </div>
+                    <div class="sidebar-text">
+                        <p>Calendar</p>
+                    </div>
+                </div>
+               </div>
+
+               <div class="right-navigation-bar">
+                    <div class="filter-container">
+                        <div class="icon-and-text-container">
+                            <div class="sidebar-icon">
+                                <i class="fa-solid fa-filter"></i>
+                            </div>
+                            <div class="sidebar-text">
+                                <p>Filter</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sort-container">
+                        <div class="icon-and-text-container">
+                            <div class="sidebar-icon">
+                                <i class="fa-solid fa-sort"></i>
+                            </div>
+                            <div class="sidebar-text">
+                                <p>Sort</p>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+            </div>
+            
+            <div class="tasks-section">
+                <!-- TO-DO SECTION -->
+                <div class="to-do-section">
+                    <div class="new-task-container">
+                        <div class="new-task-text">
+                            <h2>To-Do</h2>
+                        </div>
+
+                        <div class="new-task-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="task-cards">
+                        <!-- Card One -->
+                        <div class="single-task-card">
+                            <div class="category-and-ellipsis">
+                                <div class="category-text design-category-text">
+                                    <p>DESIGN</p>
+                                </div>
+
+                                <div class="ellipsis-icon">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-background-image"></div>
+
+                            <div class="card-heading">
+                                <h3>Customer Journey Mapping</h3>
+                            </div>
+
+                            <div class="sidebar-text">
+                                <p>Kidszone</p>
+                            </div>
+
+                            <div class="card-chips-container">
+
+                                <div class="icon-and-text-container priority-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-and-text-container date-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>25 October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="avatar-and-interactions-container">
+                                <div class="avatars-container">
+                                    <div class="single-avatar avatar-1"></div>
+                                    <div class="single-avatar avatar-2"></div>
+                                    <div class="single-avatar avatar-3"></div>
+                                </div>
+                                <div class="interactions-container">
+                                    <div class="link-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>16</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-regular fa-comment"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>21</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Card Two -->
+                        <div class="single-task-card">
+                            <div class="category-and-ellipsis">
+                                <div class="category-text design-category-text">
+                                    <p>DESIGN</p>
+                                </div>
+
+                                <div class="ellipsis-icon">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-heading">
+                                <h3>UI Component Modification</h3>
+                            </div>
+
+                            <div class="sidebar-text">
+                                <p>Bookly</p>
+                            </div>
+
+                            <div class="sidebar-text card-descriptive-text">
+                                <p>Microinteractions, Loading and Progress.</p>
+                            </div>
+
+                            <div class="card-chips-container">
+
+                                <div class="icon-and-text-container priority-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-and-text-container date-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>28 October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="avatar-and-interactions-container">
+                                <div class="avatars-container">
+                                    <div class="single-avatar avatar-1"></div>
+                                    <div class="single-avatar avatar-2"></div>
+                                    <div class="single-avatar avatar-3"></div>
+                                </div>
+                                <div class="interactions-container">
+                                    <div class="link-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>03</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-regular fa-comment"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>32</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="in-progress-section">
+                    <div class="new-task-container new-to-do">
+                        <div class="new-task-text">
+                            <h2>In Progress</h2>
+                        </div>
+
+                        <div class="new-task-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="task-cards">
+                        <!-- Card Three -->
+                        <div class="single-task-card">
+                            <div class="category-and-ellipsis">
+                                <div class="category-text development-category-text">
+                                    <p>DEVELOPMENT</p>
+                                </div>
+
+                                <div class="ellipsis-icon">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-heading">
+                                <h3>Database Customization</h3>
+                            </div>
+
+                            <div class="sidebar-text">
+                                <p>Uber</p>
+                            </div>
+
+                            <div class="sidebar-text card-descriptive-text">
+                                <p>Customizing the database for Uber's internal system, focusing on micro-interactions.</p>
+                            </div>
+
+                            <div class="card-chips-container">
+
+                                <div class="icon-and-text-container priority-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-and-text-container date-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>21 October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="avatar-and-interactions-container">
+                                <div class="avatars-container">
+                                    <div class="single-avatar avatar-1"></div>
+                                    <div class="single-avatar avatar-2"></div>
+                                </div>
+                                <div class="interactions-container">
+                                    <div class="link-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>10</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-regular fa-comment"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>06</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                         <!-- Card Four -->
+                         <div class="single-task-card">
+                            <div class="category-and-ellipsis">
+                                <div class="category-text modeling-category-text">
+                                    <p>3D MODELING</p>
+                                </div>
+
+                                <div class="ellipsis-icon">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-heading">
+                                <h3>Fix Interior Planning</h3>
+                            </div>
+
+                            <div class="sidebar-text">
+                                <p>Hotel Nice</p>
+                            </div>
+
+                            <div class="sidebar-text card-descriptive-text">
+                                <p>Addressing layout and functional issues in the
+                                    3D modeling of interior spaces.</p>
+                            </div>
+
+                            <div class="card-chips-container">
+
+                                <div class="icon-and-text-container priority-chip priority-four">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>Low</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-and-text-container date-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>13 October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="avatar-and-interactions-container">
+                                <div class="avatars-container">
+                                    <div class="single-avatar avatar-1"></div>
+                                    <div class="single-avatar avatar-2"></div>
+                                    <div class="single-avatar avatar-3"></div>
+                                </div>
+                                <div class="interactions-container">
+                                    <div class="link-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>13</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-regular fa-comment"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>09</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="done-section">
+                    <div class="new-task-container new-done">
+                        <div class="new-task-text">
+                            <h2>Done</h2>
+                        </div>
+
+                        <div class="new-task-icon">
+                            <i class="fa-solid fa-plus"></i>
+                        </div>
+                    </div>
+
+                    <div class="task-cards">
+                        <!-- Card Five -->
+                        <div class="single-task-card">
+                            <div class="category-and-ellipsis">
+                                <div class="category-text design-category-text">
+                                    <p>DESIGN</p>
+                                </div>
+
+                                <div class="ellipsis-icon">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-heading">
+                                <h3>Redesign Wordpress Website</h3>
+                            </div>
+
+                            <div class="sidebar-text">
+                                <p>Design Lab</p>
+                            </div>
+
+                            <div class="sidebar-text card-descriptive-text">
+                                <p>Redesigning the website for Design Lab to enhance usability and visual appeal.</p>
+                            </div>
+                            <div class="card-chips-container">
+
+                                <div class="icon-and-text-container priority-chip priority-five">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>High</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-and-text-container date-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>17 October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="avatar-and-interactions-container">
+                                <div class="avatars-container">
+                                    <div class="single-avatar avatar-1"></div>
+                                    <div class="single-avatar avatar-2"></div>
+                                    <div class="single-avatar avatar-3"></div>
+                                </div>
+                                <div class="interactions-container">
+                                    <div class="link-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>16</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-regular fa-comment"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>21</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!-- Card Six -->
+                        <div class="single-task-card">
+                            <div class="category-and-ellipsis">
+                                <div class="category-text marketing-category-text">
+                                    <p>MARKETING</p>
+                                </div>
+
+                                <div class="ellipsis-icon">
+                                    <i class="fa-solid fa-ellipsis"></i>
+                                </div>
+                            </div>
+
+                            <div class="card-heading">
+                                <h3>Facebook Ads Campaign</h3>
+                            </div>
+
+                            <div class="sidebar-text">
+                                <p>Plantify</p>
+                            </div>
+
+
+                            <div class="card-chips-container">
+
+                                <div class="icon-and-text-container priority-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-flag"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>Medium</p>
+                                    </div>
+                                </div>
+
+                                <div class="icon-and-text-container date-chip">
+                                    <div class="sidebar-icon">
+                                        <i class="fa-regular fa-clock"></i>
+                                    </div>
+                                    <div class="sidebar-text">
+                                        <p>20 October</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="avatar-and-interactions-container">
+                                <div class="avatars-container">
+                                    <div class="single-avatar avatar-1"></div>
+                                    <div class="single-avatar avatar-2"></div>
+                                </div>
+                                <div class="interactions-container">
+                                    <div class="link-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-solid fa-link"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>03</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="comments-interaction-container">
+                                        <div class="icon-and-text-container">
+                                            <div class="sidebar-icon">
+                                                <i class="fa-regular fa-comment"></i>
+                                            </div>
+                                            <div class="sidebar-text">
+                                                <p>17</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</body>
+</html>
